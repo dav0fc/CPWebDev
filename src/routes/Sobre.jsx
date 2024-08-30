@@ -7,7 +7,7 @@ import tia from "../assets/tiazinha.svg";
 export function Sobre() {
   return (
     <>
-      <div>
+      <div className="Main-Sobre">
         <section>
           <h2>Bem-vindo à revolução dos vídeos!</h2>
           <p>Somos uma startup com o objetivo de facilitar a produção de conteúdo em larga escala com qualidade profissional, capaz de atingir uma audiência de milhões de seguidores.</p>
@@ -30,6 +30,8 @@ export function Sobre() {
         <CardSobre nome="Profissional - Times">
             <span>1-10 Usuários</span>
             <span>Vídeos Ilimitados <strong>R$45</strong> <img src={flecha}/></span>
+            <span>+10 Usuários</span>
+            <span>Vídeos ilimitados <strong>R$20</strong><img src={flecha}/></span>
         </CardSobre>
         <CardSobre nome="Corporativo" botao="Entre em contato">
             <img src={tia} alt="Moça mexendo no celular"/>
