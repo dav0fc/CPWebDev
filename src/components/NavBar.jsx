@@ -1,24 +1,33 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-export function NavBar(){   
-    return(
+export function NavBar() { 
+    const location = useLocation();
+    const [activePath, setActivePath] = useState(location.pathname);
+
+    useEffect(() => {
+        setActivePath(location.pathname);
+    }, [location.pathname]);
+
+    const isActive = (pathname) => activePath === pathname;
+
+    return (
         <>
-            <header>
+            <header className="header">
                 <nav>
-                    <ul>
+                    <ul className="ul">
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link className={isActive("/") ? 'active' : ''} to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/sobre">Sobre</Link>
+                            <Link className={isActive("/sobre") ? 'active' : ''} to="/sobre">Sobre</Link>
                         </li>
                         <li>
-                            <Link to="/contato">Contato</Link>
+                            <Link className={isActive("/contato") ? 'active' : ''} to="/contato">Contato</Link>
                         </li>
                     </ul>
                 </nav>
             </header>
         </>
-    )
-        
+    );
 }

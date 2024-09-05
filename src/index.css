@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --cor1: #333;
 }
 
 .card-Youtube {
@@ -21,7 +22,81 @@
   background-color: #6975E8;
 }
 
-.Main-Sobre {
+.main-sobre {
   display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  max-width: 36rem;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 3.75rem;
+  color: var(--cor1);
+}
+.p-sobre {
+  color: var(--cor1);
+}
+
+.button-sobre {
+  background-color: var(--cor1);
+  color: #FFFFFF;
+  padding: 1.5rem 3.5rem;
+  border-radius: 2.5rem;
+  width: 16.125rem;
+  border: none;
+  font-size: 1.375rem;
+}
+
+.img-sobre {
+  display: flex;
+  gap: 3.75rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  gap: 3.125rem;
   
+  li * {
+    text-decoration: none;
+    color: var(--cor1);
+    font-size: 1.75rem;
+  }
+}
+
+
+
+.title-plan {
+  color: #131925;
+  text-align: center;
+  margin-bottom: 1.438rem;
+}
+
+.bottom-sobre {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+}
+
+.borda {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  height: 28.938rem;
+  align-items: center;
 }
