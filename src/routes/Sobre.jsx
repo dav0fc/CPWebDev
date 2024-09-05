@@ -25,22 +25,28 @@ export function Sobre() {
       <h2 className="title-plan">Planos</h2>
       <section className="bottom-sobre">
         <CardSobre nome="Individual">
-          <span>1 Usuário</span>
-          <span>
-            10 Vídeos <strong>R$15</strong>
-            <img src={flecha} />
-          </span>
+          <span className="card-span">1 Usuário</span>
+          <div className="box-card">
+            <span>
+              10 Vídeos <strong>R$15</strong>
+              <img src={flecha} />
+            </span>
+          </div>
         </CardSobre>
-        <CardSobre nome="Profissional - Times">
-          <span>1-10 Usuários</span>
-          <span>
-            Vídeos Ilimitados <strong>R$45</strong> <img src={flecha} />
-          </span>
-          <span>+10 Usuários</span>
-          <span>
-            Vídeos ilimitados <strong>R$20</strong>
-            <img src={flecha} />
-          </span>
+        <CardSobre nome="Profissional-Times">
+          <span className="card-span">1-10 Usuários</span>
+          <div className="box-card">
+            <span>
+              Vídeos Ilimitados <strong>R$45</strong> <img src={flecha} />
+            </span>
+          </div>
+          <span className="card-span">+10 Usuários</span>
+          <div className="box-card">
+            <span>
+              Vídeos ilimitados <strong>R$20</strong>
+              <img src={flecha} />
+            </span>
+          </div>
         </CardSobre>
         <CardSobre nome="Corporativo" botao="Entre em contato">
           <img src={tia} alt="Moça mexendo no celular" />
