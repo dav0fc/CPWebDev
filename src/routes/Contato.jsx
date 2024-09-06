@@ -3,7 +3,7 @@ export function Contato() {
         <section className="contato">
             <aside className="left">
                 <h2 className="title">Dúvidas e suporte, entre em contato:</h2>
-                <div>
+                <div className="icons">
                     <img src="/1.svg" alt="" />
                     <img src="/2.svg" alt="" />
                     <img src="/3.svg" alt="" />

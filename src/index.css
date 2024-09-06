@@ -198,3 +198,83 @@ section.contato {
 textarea {
     resize: none;
 }
+
+.icons {
+    display: flex;
+    width: 40%;
+    gap: 40px;
+}
+
+.p-home {
+    color: var(--cor1);
+    font-size: 24px;
+    height: 96px;
+}
+
+.main-home {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.aside-home {
+    width: 36rem;
+    height: 23.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    button {
+        max-width: max-content;
+        padding: 24px 56px;
+        border-radius: 40px;
+        border: none;
+        background-color: var(--cor1);
+        font-weight: 500;
+        font-size: 22px;
+    }
+}
+
+.cards-home {
+    margin-top: 104px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.card {
+    width: 19.3rem;
+    height: 20.3rem;
+    padding: 16px 34px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h2 {
+        color: var(--cor1);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 42.2px;
+    } 
+}
+
+.container {
+    padding: 65px;
+}
+
+.card-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--cor1);
+}
+
+.card-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 64px;
+    color: #FFF;
+    
+}
