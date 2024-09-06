@@ -1,4 +1,4 @@
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function NavBar() {
     return (
@@ -8,9 +8,9 @@ export function NavBar() {
                     <ul className="ul">
                         <li>
                             <NavLink
-                                className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "active" : ""
-                                  }
+                                className={({ isActive }) =>
+                                    isActive ? "active" : ""
+                                }
                                 to="/"
                             >
                                 Home
@@ -18,7 +18,7 @@ export function NavBar() {
                         </li>
                         <li>
                             <NavLink
-                                className={({ isActive}) =>
+                                className={({ isActive }) =>
                                     isActive && "active"
                                 }
                                 to="/sobre"
@@ -28,7 +28,7 @@ export function NavBar() {
                         </li>
                         <li>
                             <NavLink
-                                className={({ isActive}) =>
+                                className={({ isActive }) =>
                                     isActive && "active"
                                 }
                                 to="/contato"
