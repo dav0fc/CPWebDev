@@ -1,29 +1,40 @@
-import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { NavLink} from "react-router-dom";
 
-export function NavBar() { 
-    const location = useLocation();
-    const [activePath, setActivePath] = useState(location.pathname);
-
-    useEffect(() => {
-        setActivePath(location.pathname);
-    }, [location.pathname]);
-
-    const isActive = (pathname) => activePath === pathname;
-
+export function NavBar() {
     return (
         <>
             <header className="header">
                 <nav>
                     <ul className="ul">
                         <li>
-                            <Link className={isActive("/") ? 'active' : ''} to="/">Home</Link>
+                            <NavLink
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "active" : ""
+                                  }
+                                to="/"
+                            >
+                                Home
+                            </NavLink>
                         </li>
                         <li>
-                            <Link className={isActive("/sobre") ? 'active' : ''} to="/sobre">Sobre</Link>
+                            <NavLink
+                                className={({ isActive}) =>
+                                    isActive && "active"
+                                }
+                                to="/sobre"
+                            >
+                                Sobre
+                            </NavLink>
                         </li>
                         <li>
-                            <Link className={isActive("/contato") ? 'active' : ''} to="/contato">Contato</Link>
+                            <NavLink
+                                className={({ isActive}) =>
+                                    isActive && "active"
+                                }
+                                to="/contato"
+                            >
+                                Contato
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>

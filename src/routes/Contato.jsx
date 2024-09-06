@@ -16,11 +16,15 @@ export function Contato() {
                         <label htmlFor="nome">Nome:</label>
                         <input id="nome" />
                     </div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" />
+                    <div>
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" id="email" />
+                    </div>
                     <label htmlFor="msg">Mensagem:</label>
                     <textarea name="msg" id="msg"></textarea>
-                    <button>Enviar</button>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
                 </form>
             </aside>
         </section>
