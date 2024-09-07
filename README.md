@@ -20,11 +20,7 @@ Este projeto utiliza React para a construção da interface do usuário e Vite c
 
 ## Pré-requisitos
 
-Certifique-se de ter o Node.js e npm instalados. Você pode verificar se já os tem instalados com os seguintes comandos:
-
-```bash
-node -v
-npm -v
+Certifique-se de ter o Node.js instalado 
 
 ## Colaboradores do Projeto
 <div style="display: flex; justify-content: space-between; align-items: center;">
