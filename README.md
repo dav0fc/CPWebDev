@@ -36,7 +36,6 @@ Certifique-se de ter o Node.js instalado
 <img loading="lazy" src="https://avatars.githubusercontent.com/desenise" width=120>
 <p style="font-size:min(2vh, 36px); margin-top: 10px;">Denise Senise - RM 556006</p>
 </a>
-<p style="font-size:min(2vh, 36px); margin
 <a href="https://github.com/gab-gouvea" target="_blank" style="text-align: center; margin-right: 10px;">
 <img loading="lazy" src="https://avatars.githubusercontent.com/gab-gouvea" width=120>
 <p style="font-size:min(2vh, 36px); margin-top: 10px;">Gabriel Gouvea Marques de Oliveira - RM 555528</p>
